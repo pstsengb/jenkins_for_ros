@@ -23,7 +23,7 @@ pipeline {
         apt update
         cd /ws_ros
         apt install -y ros-melodic-tf2-ros
-        source /opt/ros/melodic/setup.bash && catkin_make
+        #source /opt/ros/melodic/setup.bash && catkin_make
         #rostest jenkins_ros test_give_location_and_task.test;
         '''
 
