@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+
+  <test test-name="test_jenkins_ros" pkg="jenkins_ros" type="test_give_location_and_task.py"  name="test_give_location_and_task" retry="0" time-limit="900"/>    
+
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    DWAPlannerROS
+    <remap from="/odom" to="odom"/>
+    <param name="controller_frequency" value="10"/>
+    <param name="oscillation_timeout" value="10"/>
+    <param name="oscillation_distance" value="0.5"/>
+    <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS"/>
+    <rosparam file="$(find ugv_navigation)/config/config_sim/local_costmap.yaml" command="load" />
+    <rosparam file="$(find ugv_navigation)/config/config_sim/global_costmap.yaml" command="load" /> 
+    <rosparam file="$(find ugv_navigation)/config/config_sim/dwa_local_planner_params.yaml" command="load" />
+  </node>
+
+  <!-- All TF setup goes here -->
+  <node pkg="tf2_ros" type="static_transform_publisher" name="baselink2laser" args="0.6 0.32 0 0.785398163 0 0 /base_link /laser" />
+    
+</launch> 
