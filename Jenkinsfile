@@ -20,6 +20,7 @@ pipeline {
         mkdir -p /ws_ros/src
         cd /ws_ros/src
         git clone https://github.com/tsengapola/jenkins_ros
+        apt update
         cd /ws_ros
         apt install -y ros-melodic-tf2-ros
         source /opt/ros/melodic/setup.bash && catkin_make
