@@ -6,7 +6,7 @@ pipeline {
       agent {
         docker {
           image 'ros:melodic-ros-base'
-          args ' -v /var/run/docker.sock:/var/run/docker.sock'
+          args ' -v /var/run/docker.sock:/var/run/docker.sock -v  xxxx' 
         }
       }
       
