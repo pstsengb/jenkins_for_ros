@@ -6,7 +6,7 @@ pipeline {
       agent {
         docker {
           image 'ros:melodic-ros-base'
-          args ' -v /var/run/docker.sock:/var/run/docker.sock -v add another file' 
+          args ' -v /var/run/docker.sock:/var/run/docker.sock -v /home/pstsengb/Desktop/new_robot_2d_simulation:/ws_ros' 
         }
       }
       
