@@ -5,7 +5,7 @@ pipeline {
     stage('Compile the pkg') {
       agent {
         docker {
-          image 'ros:melodic-ros-base'
+          image 'ubuntu20.04_ros_noetic_rlab:latest'
           args ' -v /var/run/docker.sock:/var/run/docker.sock -v /home/pstsengb/Desktop/new_robot_2d_simulation:/ws_ros' 
         }
       }
