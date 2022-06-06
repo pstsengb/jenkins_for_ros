@@ -17,14 +17,10 @@ pipeline {
       steps {
         
         sh '''#!/bin/bash
-        mkdir -p /ws_ros/src
-        cd /ws_ros/src
-        git clone https://github.com/tsengapola/jenkins_ros
-        apt update
         cd /ws_ros
-        apt install -y ros-melodic-tf2-ros
-        #source /opt/ros/melodic/setup.bash && catkin_make
-        #rostest jenkins_ros test_give_location_and_task.test;
+        catkin_make -DCMAKE_BUILD_TYPE=Release
+        source devel/setup.bash
+        rostest fsm_manager test_cmd.test;
         '''
 
       }
