@@ -43,9 +43,11 @@ click install without restart
 * See Jenkins file in this repo as example, we can add mutiple test, parallel test, etc... 
 * In this Jenkins file, I only test if package can be compiled or not. You can see a comment line that runs rostest for your reference.
 
-> Setup testing
+# Start Jenkins test(link to public repository)
+>Setup testing
 <img src="https://github.com/tsengapola/my_image_repo/blob/main/jenkins_ros/add_repo.gif" width="600" height="400"/>
 
+# Start Jenkins test(link to private repository)
 > Generate token
 got to your github: setting->Developer settings
 Create a token
