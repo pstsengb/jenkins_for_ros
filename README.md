@@ -52,5 +52,5 @@ then click install without restart
 > go to your github: setting->Developer settings ->Personal access tokens ,then Generate new token and record token number 
 > 
 > different part is when you select 'Branch Source',click Add (as below picture)
-
+<img src="https://github.com/pstsengb/Image_for_repository/blob/main/jenkin_use/Add.png" width="500" height="300"/>
 
