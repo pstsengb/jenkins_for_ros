@@ -49,5 +49,5 @@ click install without restart
 > Generate token
 got to your github: setting->Developer settings
 Create a token
-
+<img src="https://github.com/pstsengb/Image_for_repository/blob/main/jenkin_use/how_to_getting_token.gif" width="600" height="400"/>
 > When select github in credential part add token and provide the token
