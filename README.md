@@ -51,7 +51,7 @@ then click install without restart
 ### Start Jenkins test(link to private repository)
 > go to your github: setting->Developer settings ->Personal access tokens ,then Generate new token and record token number 
 > 
-> different part:
+> different part setting as below 
 > 
 *  Item 'Branch Source',click Add (as below picture)
 <img src="https://github.com/pstsengb/Image_for_repository/blob/main/jenkin_use/Add.png" width="500" height="300"/>
@@ -62,7 +62,7 @@ then click install without restart
 *  when you finish operation as above,you will see Credential can select,then select your have done setting
 <img src="https://github.com/pstsengb/Image_for_repository/blob/main/jenkin_use/chosesetting.png" width="500" height="300"/>
 
-> 1
+> after Credential setting ok,rest parts same with Start Jenkins test(link to public repository)
 > 
 
 
