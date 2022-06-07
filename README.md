@@ -37,19 +37,18 @@ install following
     --> docker-build-step 
     --> Docker Compose Build Step 
     --> Docker API 
-click install without restart
+    
+then click install without restart
 ```
 > add Jenkins file
 * See Jenkins file in this repo as example, we can add mutiple test, parallel test, etc... 
 * In this Jenkins file, I only test if package can be compiled or not. You can see a comment line that runs rostest for your reference.
 
 ### Start Jenkins test(link to public repository)
->Setup testing
+>Setup testing link to public repository 
 <img src="https://github.com/tsengapola/my_image_repo/blob/main/jenkins_ros/add_repo.gif" width="600" height="400"/>
 
 ### Start Jenkins test(link to private repository)
-> Generate token
-got to your github: setting->Developer settings
-Create a token
+> go to your github: setting->Developer settings Create a token and record token number (path as below)
 <img src="https://github.com/pstsengb/Image_for_repository/blob/main/jenkin_use/how_to_getting_token.gif" width="600" height="400"/>
-> When select github in credential part add token and provide the token
+
