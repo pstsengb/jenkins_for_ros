@@ -53,7 +53,7 @@ then click install without restart
 > 
 > different part setting as below:
 > 
-*  Item 'Branch Source',click Add (as below picture)
+*  Item 'Branch Source',click Add,choose your test name 
 <img src="https://github.com/pstsengb/Image_for_repository/blob/main/jenkin_use/Add.png" width="500" height="300"/>
 
 *  Enter 'user name' and 'Password' ,which password is token number
