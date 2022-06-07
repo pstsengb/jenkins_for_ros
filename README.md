@@ -46,9 +46,9 @@ then click install without restart
 
 ### Start Jenkins test(link to public repository)
 >Setup testing link to public repository 
-<img src="https://github.com/tsengapola/my_image_repo/blob/main/jenkins_ros/add_repo.gif" width="600" height="400"/>
+<img src="https://github.com/tsengapola/my_image_repo/blob/main/jenkins_ros/add_repo.gif" width="500" height="300"/>
 
 ### Start Jenkins test(link to private repository)
 > go to your github: setting->Developer settings Create a token and record token number (path as below)
-<img src="https://github.com/pstsengb/Image_for_repository/blob/main/jenkin_use/how_to_getting_token.gif" width="600" height="400"/>
+<img src="https://github.com/pstsengb/Image_for_repository/blob/main/jenkin_use/how_to_getting_token.gif" width="500" height="300"/>
 
