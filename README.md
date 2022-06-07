@@ -37,6 +37,7 @@ install following
     --> docker-build-step 
     --> Docker Compose Build Step 
     --> Docker API 
+click install without restart
 ```
 > add Jenkins file
 * See Jenkins file in this repo as example, we can add mutiple test, parallel test, etc... 
