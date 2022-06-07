@@ -54,11 +54,13 @@ then click install without restart
 > different part:
 > 
 > Item 'Branch Source',click Add (as below picture)
+<img src="https://github.com/pstsengb/Image_for_repository/blob/main/jenkin_use/Add.png" width="500" height="300"/>
 >
 > Enter 'user name' and 'Password' ,which password is token number
+<img src="https://github.com/pstsengb/Image_for_repository/blob/main/jenkin_use/enteruserandpassword.png" width="500" height="300"/>
 >
 > when you finish operation as above,you will see Credential can select,then select your have done setting
+<img src="https://github.com/pstsengb/Image_for_repository/blob/main/jenkin_use/chosesetting.png" width="500" height="300"/>
+>
 
-
-<img src="https://github.com/pstsengb/Image_for_repository/blob/main/jenkin_use/Add.png" width="500" height="300"/>
 
