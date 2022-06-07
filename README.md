@@ -51,6 +51,6 @@ then click install without restart
 ### Start Jenkins test(link to private repository)
 > go to your github: setting->Developer settings ->Personal access tokens ,then Generate new token and record token number 
 > 
-> Setup testing link to private repository 
-* different part is when you select 'Branch Source',click Add (as below picture)
+> different part is when you select 'Branch Source',click Add (as below picture)
+
 
