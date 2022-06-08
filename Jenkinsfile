@@ -70,8 +70,7 @@ pipeline {
           steps {
              
             sh '''#!/bin/bash
-		source /opt/ros/melodic/setup.bash
-                roscore
+		echo "BB"
                   '''      
           }
           post {
