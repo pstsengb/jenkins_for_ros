@@ -40,7 +40,7 @@ install following
     
 then click install without restart
 ```
-> add Jenkins file
+> add Jenkinsfile on this repo(jenkins system will run this script)
 * See Jenkins file in this repo as example, we can add mutiple test, parallel test, etc... 
 * In this Jenkins file.we only test package can be compiled or not. and provide template of parallel test (only print AA and BB,you can write you want to test content)
 
@@ -64,5 +64,6 @@ then click install without restart
 
 > after Credential setting ok,rest parts same with Start Jenkins test(link to public repository)
 > 
-
-
+## Jenkins result
+> after operate as above ,ckick Open Blue Ocean to check result
+<img src="https://github.com/pstsengb/Image_for_repository/blob/main/jenkin_use/result.png" width="500" height="300"/>  
