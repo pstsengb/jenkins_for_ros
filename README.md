@@ -59,7 +59,7 @@ then click install without restart
 *  Enter 'user name' and 'Password' ,which password is token number
 <img src="https://github.com/pstsengb/Image_for_repository/blob/main/jenkin_use/enteruserandpassword.png" width="500" height="300"/>
 
-*  when you finish operation as above,you will see Credential can select,then select your have done setting
+*  when you finish operation as above,you will see Credential ,which can be selected,then select setting you have done
 <img src="https://github.com/pstsengb/Image_for_repository/blob/main/jenkin_use/chosesetting.png" width="500" height="300"/>
 
 > after Credential setting ok,rest parts same with Start Jenkins test(link to public repository)
