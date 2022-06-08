@@ -5,8 +5,8 @@ pipeline {
     stage('Compile the pkg') {
       agent {
         docker {
-          image 'ubuntu20.04_ros_noetic_rlab:latest'
-          args ' -v /var/run/docker.sock:/var/run/docker.sock -v /home/pstsengb/Desktop/new_robot_2d_simulation:/ws_ros' 
+          image 'ros:melodic-ros-base'
+          args ' -v /var/run/docker.sock:/var/run/docker.sock' 
         }
       }
       
@@ -17,10 +17,10 @@ pipeline {
       steps {
         
         sh '''#!/bin/bash
+        mkdir -p /ws_ros/src
         cd /ws_ros
-        catkin_make -DCMAKE_BUILD_TYPE=Release
-        source devel/setup.bash
-        rostest fsm_manager test_cmd.test;
+        source /opt/ros/melodic/setup.bash
+        catkin_make 
         '''
 
       }
