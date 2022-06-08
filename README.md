@@ -45,7 +45,7 @@ then click install without restart
 * In this Jenkins file.we only test package can be compiled or not. and provide template of parallel test (only print AA and BB,you can write you want to test content)
 
 ### Start Jenkins test(link to public repository)
->Setup testing link to public repository 
+>setup testing link to public repository 
 <img src="https://github.com/tsengapola/my_image_repo/blob/main/jenkins_ros/add_repo.gif" width="500" height="300"/>
 
 ### Start Jenkins test(link to private repository)
@@ -59,13 +59,13 @@ then click install without restart
 *  Enter 'user name' and 'Password' ,which password is token number
 <img src="https://github.com/pstsengb/Image_for_repository/blob/main/jenkin_use/enteruserandpassword.png" width="500" height="300"/>
 
-*  when you finish operation as above,you will see Credential ,which can be selected,then select setting you have done
+*  When you finish operation as above,you will see Credential ,which can be selected,then select setting you have done
 <img src="https://github.com/pstsengb/Image_for_repository/blob/main/jenkin_use/chosesetting.png" width="500" height="300"/>
 
 > after Credential setting ok,rest parts same with Start Jenkins test(link to public repository)
 > 
 ## Check Jenkins result
-> After operate as above ,ckick Open Blue Ocean to check result
+> after operate as above ,ckick Open Blue Ocean to check result
 >
 >in this case,we test Compile ok and parallel test only echo AA and BB ok ,this can be a template which you can use
 
