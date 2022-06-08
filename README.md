@@ -42,7 +42,7 @@ then click install without restart
 ```
 > add Jenkins file
 * See Jenkins file in this repo as example, we can add mutiple test, parallel test, etc... 
-* In this Jenkins file, I only test if package can be compiled or not. You can see a comment line that runs rostest for your reference.
+* In this Jenkins file, test 2 parts. first test package can be compiled or not. second test parallel testing only print AA and BB 
 
 ### Start Jenkins test(link to public repository)
 >Setup testing link to public repository 
