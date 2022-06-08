@@ -71,6 +71,7 @@ pipeline {
              
             sh '''#!/bin/bash
                 cd /ws_ros
+		source /opt/ros/melodic/setup.bash
                 roscore
                   '''      
           }
