@@ -49,7 +49,7 @@ then click install without restart
 <img src="https://github.com/tsengapola/my_image_repo/blob/main/jenkins_ros/add_repo.gif" width="500" height="300"/>
 
 ### Start Jenkins test(link to private repository)
-> go to your github: setting->Developer settings ->Personal access tokens ,then Generate new token and record token number 
+> go to your github: setting->Developer settings ->Personal access tokens ,then click Generate new token and record token number 
 > 
 > different part setting as below:
 > 
