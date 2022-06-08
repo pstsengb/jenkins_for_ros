@@ -64,6 +64,9 @@ then click install without restart
 
 > after Credential setting ok,rest parts same with Start Jenkins test(link to public repository)
 > 
-## Jenkins result
-> after operate as above ,ckick Open Blue Ocean to check result
+## Check Jenkins result
+> After operate as above ,ckick Open Blue Ocean to check result
+>
+>in this case,we test Compile ok and parallel test only echo AA and BB ok ,this can be a template which you can use
+
 <img src="https://github.com/pstsengb/Image_for_repository/blob/main/jenkin_use/result.png" width="500" height="300"/>  
