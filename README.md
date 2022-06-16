@@ -38,6 +38,7 @@ install following
     --> docker-build-step 
     --> Docker Compose Build Step 
     --> Docker API 
+    --> Blue Ocean
     
 then click install without restart
 ```
