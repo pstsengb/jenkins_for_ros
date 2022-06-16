@@ -1,8 +1,9 @@
 # Jenkins Setup For ROS
-Tutorial for running ROS test in jenkins and how to setup.
+Setup jenkins for ROS CI/CD cycle
 
 ## Download 2 docker images
 
+One image is for jenkins, and another image is for ROS test in jenkins
 ```
 docker pull ros:melodic-ros-base
 docker pull jenkins/jenkins:lts
@@ -40,33 +41,28 @@ install following
     
 then click install without restart
 ```
-> add Jenkinsfile on this repo(jenkins system will run this script)
+> add a Jenkinsfile on this repo(jenkins system will run this script)
 * See Jenkins file in this repo as example, we can add mutiple test, parallel test, etc... 
-* In this Jenkins file.we only test package can be compiled or not. and provide template of parallel test (only print AA and BB,you can write you want to test content)
+* In this Jenkins file. We have 2 stages in the test. The first one is the compilation test, in which it creates a workspace and do catkin_make. The second one is a parallel stages template, in which they just echo AA and BB.
 
-### Start Jenkins test(link to public repository)
->Setup testing link to public repository 
+### Start Jenkins test - link to public repository
+* Following video shows you how to setup a pipeline in jenkins and add public repo for the test
 <img src="https://github.com/tsengapola/my_image_repo/blob/main/jenkins_ros/add_repo.gif" width="500" height="300"/>
 
-### Start Jenkins test(link to private repository)
-> Go to your github: setting->Developer settings ->Personal access tokens ,then click Generate new token and record token number 
-> 
-> different part setting as below:
-> 
-*  at item 'Branch Source',click Add,choose your test name 
+### Start Jenkins test - link to private repository
+`Create a token from your github. Go to your github: setting->Developer settings ->Personal access tokens ,then click Generate new token and record token number`
+* Following image shows you how to add the token for the private repo pipeline:
 <img src="https://github.com/pstsengb/Image_for_repository/blob/main/jenkin_use/Add.png" width="500" height="300"/>
 
-*  enter 'user name' and 'Password' ,which password is token number
+*  Enter 'user name' and 'Password', the password is the token number
 <img src="https://github.com/pstsengb/Image_for_repository/blob/main/jenkin_use/enteruserandpassword.png" width="500" height="300"/>
 
-*  when you finish operation as above,you will see Credential ,which can be selected,then select setting you have done
+*  Once you fill the 'user name' and 'Password', in the Credential selection, you should see the name you just created
 <img src="https://github.com/pstsengb/Image_for_repository/blob/main/jenkin_use/chosesetting.png" width="500" height="300"/>
 
-> after Credential setting ok,rest parts same with Start Jenkins test(link to public repository)
+* Once the Credential is added,the remain setup is the same as `Start Jenkins test - link to public repository`
 > 
 ## Check Jenkins result
-> After operate as above ,ckick Open Blue Ocean to check result
->
->in this case,we test Compile ok and parallel test only echo AA and BB ok ,this can be a template which you can use
+You can now use Blue Ocean to check result
 
 <img src="https://github.com/pstsengb/Image_for_repository/blob/main/jenkin_use/result.png" width="500" height="300"/>  
